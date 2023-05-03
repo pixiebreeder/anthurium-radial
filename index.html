@@ -1,8 +1,8 @@
 <script>
 
-const gifURL = "anthurium_loop.gif";
-const gifWidth = 100
-const gifHeight = 100
+const gifURL = "anthurium_loop.gif"; 
+const gifWidth = 150
+const gifHeight = 150
 const overlapX = 0.25
 const overlapY = 0.25
 const offsetX = gifWidth * overlapX
@@ -18,7 +18,7 @@ function createGif (x, y) {
   gif.style.height = gifHeight + 'px'
   gif.style.position = 'absolute'
   gif.style.left = x + 'px'
-  gif.style.top = y + 'px'
+  gif.style.bottom = y + 'px'
   //gif.style.rotate = x + 'deg'
 }
   
