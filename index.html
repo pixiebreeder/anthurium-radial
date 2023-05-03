@@ -7,7 +7,8 @@ const overlapX = 0.25
 const overlapY = 0.25
 const offsetX = gifWidth * overlapX
 const columns = window.innerWidth / (gifWidth * overlapX)
-const rows = window.innerHeight / (gifHeight * overlapY) * 0.65
+const rows = window.innerHeight / (gifHeight * overlapY) * 0.01
+
 
 function createGif (x, y) {
   const gif = document.createElement('img') // <img>
@@ -18,7 +19,7 @@ function createGif (x, y) {
   gif.style.position = 'absolute'
   gif.style.left = x + 'px'
   gif.style.top = y + 'px'
-  gif.style.rotate = x + 'deg'
+  //gif.style.rotate = x + 'deg'
 }
   
 function setup () {
